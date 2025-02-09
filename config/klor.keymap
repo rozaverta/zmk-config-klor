@@ -134,9 +134,9 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-           &trans  &trans     &trans      &trans  &trans                  &trans  &trans  &kp RA(U)  &trans  &bt BT_CLR
-&kp RA(A)  &trans  &kp RA(S)  &trans      &trans  &trans                  &trans  &trans  &trans     &trans  &kp RA(O)   &trans
-&trans     &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &trans
+           &trans  &trans     &trans      &trans  &trans                  &trans  &trans  &sys_reset  &bt BT_CLR_ALL  &bt BT_CLR
+&kp RA(A)  &trans  &kp RA(S)  &trans      &trans  &trans                  &trans  &trans  &trans      &trans          &kp RA(O)   &trans
+&trans     &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans          &trans      &trans
                               &mo ADJUST  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
