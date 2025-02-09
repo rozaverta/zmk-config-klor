@@ -68,13 +68,15 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-          &kp Q  &kp W  &kp F      &kp P        &kp G                         &kp J    &kp L        &kp U      &kp Y    &kp SEMI
-&kp LALT  &kp A  &kp R  &kp S      &hm LSHFT T  &kp D                         &kp H    &hm RSHFT N  &kp E      &kp I    &kp O     &kp SQT
-&kp DEL   &kp Z  &kp X  &kp C      &kp V        &kp B      &trans   &trans    &kp K    &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                        &kp LCTRL  &mo LOWER    &kp SPACE  &kp TAB  &kp LGUI  &kp RET  &mo RAISE    &kp BSPC
+          &kp Q  &kp W  &kp F      &kp P        &kp G                                    &kp J    &kp L        &kp U      &kp Y    &kp SEMI
+&kp LALT  &kp A  &kp R  &kp S      &hm LSHFT T  &kp D                                    &kp H    &hm RSHFT N  &kp E      &kp I    &kp O     &kp SQT
+&kp DEL   &kp Z  &kp X  &kp C      &kp V        &kp B      &kp LG(SPACE)  &kp RG(SPACE)  &kp K    &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                        &kp LCTRL  &mo LOWER    &kp SPACE  &kp TAB        &kp LGUI       &kp RET  &mo RAISE    &kp BSPC
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
